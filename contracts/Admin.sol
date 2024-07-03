@@ -17,7 +17,7 @@ contract Admin {
     
 
     // Constructor to set initial admins during deployment
-    constructor (address [] memory _admins) public {
+    constructor (address [] memory _admins) public { //1
         for(uint i = 0; i < _admins.length; i++) {
             admins.push(_admins[i]);
             isAdmin[_admins[i]] = true;

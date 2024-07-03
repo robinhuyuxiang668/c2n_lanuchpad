@@ -7,7 +7,7 @@ import "../IERC20.sol";
 import "../math/SafeMath.sol";
 
 contract DevToken is Context, IERC20 {
-    using SafeMath for uint256; //1
+    using SafeMath for uint256; //11
 
     mapping(address => uint256) private _balances;
 
